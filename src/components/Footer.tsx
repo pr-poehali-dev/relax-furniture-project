@@ -85,7 +85,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Icon name="MapPin" size={16} className="text-[var(--neon)]" />
-                <span className="font-body text-sm text-muted-foreground">Москва, ул. Мебельная, 12</span>
+                <span className="font-body text-sm text-muted-foreground">Междуреченск, Кемеровская обл.</span>
               </div>
             </div>
           </div>

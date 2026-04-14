@@ -1,19 +1,19 @@
 import Icon from "@/components/ui/icon";
 
 const steps = [
-  { num: "01", title: "Выбор", desc: "Подбираете мебель в каталоге или с помощью 3D-примерки" },
+  { num: "01", title: "Выбор", desc: "Подбираете мебель в каталоге или по телефону с помощью консультанта" },
   { num: "02", title: "Заказ", desc: "Оформляете заказ онлайн или по телефону, выбираете дату" },
   { num: "03", title: "Доставка", desc: "Привозим в удобное время, поднимаем на любой этаж" },
   { num: "04", title: "Сборка", desc: "Мастера собирают мебель под ключ — быстро и аккуратно" },
 ];
 
 const features = [
-  { icon: "Truck", title: "Бесплатная доставка", desc: "При заказе от 30 000 ₽" },
-  { icon: "Clock", title: "В день заказа", desc: "Для товаров на складе в Москве" },
-  { icon: "Shield", title: "Страхование груза", desc: "100% защита при транспортировке" },
+  { icon: "Truck", title: "Доставка по городу", desc: "1 200 ₽ — по Междуреченску" },
+  { icon: "Clock", title: "В удобное время", desc: "Согласуем дату и время заранее" },
+  { icon: "Shield", title: "Аккуратная перевозка", desc: "Мебель упакована и защищена" },
   { icon: "Wrench", title: "Сборка мебели", desc: "Профессиональные сборщики" },
   { icon: "RotateCcw", title: "Возврат 30 дней", desc: "Без объяснения причин" },
-  { icon: "MapPin", title: "Вся Россия", desc: "Доставка в любой город" },
+  { icon: "MapPin", title: "Кемеровская область", desc: "Междуреченск и окрестности" },
 ];
 
 export default function DeliverySection() {
@@ -85,8 +85,8 @@ export default function DeliverySection() {
       <div className="relative rounded-3xl overflow-hidden border border-white/8 p-8 md:p-12 glass">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { zone: "Москва и МО", time: "1–2 дня", price: "Бесплатно от 30 000 ₽", icon: "Building2" },
-            { zone: "Россия", time: "3–7 дней", price: "От 990 ₽", icon: "Map" },
+            { zone: "По Междуреченску", time: "1–2 дня", price: "1 200 ₽", icon: "Building2" },
+            { zone: "Кемеровская обл.", time: "2–5 дней", price: "По договорённости", icon: "Map" },
             { zone: "Самовывоз", time: "В день заказа", price: "Бесплатно", icon: "Store" },
           ].map((zone) => (
             <div key={zone.zone} className="flex flex-col gap-3">

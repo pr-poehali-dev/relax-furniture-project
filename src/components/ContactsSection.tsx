@@ -123,7 +123,7 @@ export default function ContactsSection() {
             {
               icon: "MapPin",
               title: "Шоурум",
-              value: "Москва, ул. Мебельная, 12",
+              value: "Междуреченск, Кемеровская обл.",
               note: "Пн–Вс, 10:00–21:00",
             },
           ].map((contact) => (
