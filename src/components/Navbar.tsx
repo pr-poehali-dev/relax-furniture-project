@@ -73,7 +73,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
         <div className="hidden md:flex items-center gap-4">
           <button className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2">
             <Icon name="Phone" size={16} />
-            <span>8 (800) 555-35-35</span>
+            <span>+7 (906) 980-14-80</span>
           </button>
           <button className="neon-bg text-background font-display font-600 text-sm px-5 py-2.5 rounded-sm hover:opacity-90 transition-all hover:scale-105 uppercase tracking-wider">
             Консультация

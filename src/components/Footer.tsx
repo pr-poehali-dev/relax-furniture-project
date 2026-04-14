@@ -77,7 +77,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-3">
                 <Icon name="Phone" size={16} className="text-[var(--neon)]" />
-                <span className="font-body text-sm text-muted-foreground">8 (800) 555-35-35</span>
+                <span className="font-body text-sm text-muted-foreground">+7 (906) 980-14-80</span>
               </div>
               <div className="flex items-center gap-3">
                 <Icon name="Mail" size={16} className="text-[var(--neon)]" />

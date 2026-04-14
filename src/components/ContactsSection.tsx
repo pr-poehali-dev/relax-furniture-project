@@ -111,8 +111,8 @@ export default function ContactsSection() {
             {
               icon: "Phone",
               title: "Телефон",
-              value: "8 (800) 555-35-35",
-              note: "Бесплатно по России",
+              value: "+7 (906) 980-14-80",
+              note: "",
             },
             {
               icon: "Mail",
