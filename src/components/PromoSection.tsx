@@ -10,12 +10,12 @@ const promos = [
     until: "30 апреля",
   },
   {
-    title: "Ночь распродаж",
-    desc: "Только с 22:00 до 06:00 — эксклюзивные цены",
-    discount: "−50%",
-    color: "from-purple-950/50 to-purple-900/20",
-    icon: "Moon",
-    until: "Каждую пятницу",
+    title: "Наличные и перевод",
+    desc: "Скидка 10% при оплате наличными или переводом на карту",
+    discount: "−10%",
+    color: "from-emerald-950/50 to-emerald-900/20",
+    icon: "Banknote",
+    until: "Постоянно",
   },
   {
     title: "Кухня мечты",
