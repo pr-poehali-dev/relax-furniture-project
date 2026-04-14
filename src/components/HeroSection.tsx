@@ -84,7 +84,7 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Создаём пространства, в которых хочется жить. Стильная мебель с доставкой и сборкой по всей России.
+            Создаём пространства, в которых хочется жить. Стильная мебель с доставкой и сборкой.
           </p>
 
           {/* CTA buttons */}
