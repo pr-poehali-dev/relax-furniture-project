@@ -117,7 +117,7 @@ export default function ContactsSection() {
             {
               icon: "Mail",
               title: "Email",
-              value: "hello@relax-mebel.ru",
+              value: "Eltim1301@gmail.com",
               note: "Ответим за 1 час",
             },
             {

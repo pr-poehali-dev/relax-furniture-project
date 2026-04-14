@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Icon name="Mail" size={16} className="text-[var(--neon)]" />
-                <span className="font-body text-sm text-muted-foreground">hello@relax-mebel.ru</span>
+                <span className="font-body text-sm text-muted-foreground">Eltim1301@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Icon name="MapPin" size={16} className="text-[var(--neon)]" />
