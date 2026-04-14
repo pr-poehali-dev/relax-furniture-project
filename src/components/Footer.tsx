@@ -35,7 +35,6 @@ export default function Footer() {
               {[
                 { id: "home", label: "Главная" },
                 { id: "catalog", label: "Каталог" },
-                { id: "promo", label: "Акции" },
                 { id: "delivery", label: "Доставка" },
                 { id: "contacts", label: "Контакты" },
               ].map((item) => (
