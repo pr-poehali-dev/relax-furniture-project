@@ -9,6 +9,7 @@ interface NavbarProps {
 const navItems = [
   { id: "home", label: "Главная" },
   { id: "catalog", label: "Каталог" },
+  { id: "promo", label: "Акции" },
   { id: "delivery", label: "Доставка" },
   { id: "contacts", label: "Контакты" },
 ];
