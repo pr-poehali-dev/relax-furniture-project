@@ -124,7 +124,7 @@ export default function ContactsSection() {
               icon: "MapPin",
               title: "Шоурум",
               value: "Междуреченск, Кемеровская обл.",
-              note: "Пн–Вс, 10:00–21:00",
+              note: "Пн–Пт 10:00–19:00 · Сб–Вс 10:00–18:00",
             },
           ].map((contact) => (
             <div

@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full neon-bg animate-pulse" />
-              <span className="font-body text-xs text-[var(--neon)]">Работаем с 9:00 до 21:00</span>
+              <span className="font-body text-xs text-[var(--neon)]">Пн–Пт 10:00–19:00 · Сб–Вс 10:00–18:00</span>
             </div>
           </div>
 
