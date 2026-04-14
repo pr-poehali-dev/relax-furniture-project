@@ -85,7 +85,7 @@ export default function DeliverySection() {
       <div className="relative rounded-3xl overflow-hidden border border-white/8 p-8 md:p-12 glass">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { zone: "По Междуреченску", time: "1–2 дня", price: "1 200 ₽", icon: "Building2" },
+            { zone: "Доставка по городу", time: "1–2 дня", price: "1 200 ₽", icon: "Building2" },
             { zone: "Кемеровская обл.", time: "2–5 дней", price: "По договорённости", icon: "Map" },
             { zone: "Самовывоз", time: "В день заказа", price: "Бесплатно", icon: "Store" },
           ].map((zone) => (
