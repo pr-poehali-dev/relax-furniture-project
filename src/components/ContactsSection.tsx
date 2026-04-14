@@ -4,10 +4,29 @@ import Icon from "@/components/ui/icon";
 export default function ContactsSection() {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("https://functions.poehali.dev/965cae04-d499-40ad-b361-234daeee76a8", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError("Ошибка отправки. Попробуйте позвонить нам.");
+      }
+    } catch {
+      setError("Ошибка соединения. Попробуйте позвонить нам.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -74,12 +93,16 @@ export default function ContactsSection() {
                     className="w-full glass border border-white/10 rounded-xl px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-[var(--neon)]/50 transition-colors bg-transparent resize-none"
                   />
                 </div>
+                {error && (
+                  <p className="font-body text-sm text-red-400 text-center">{error}</p>
+                )}
                 <button
                   type="submit"
-                  className="neon-bg text-background font-display font-700 text-base py-4 rounded-xl uppercase tracking-wider hover:opacity-90 transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                  disabled={loading}
+                  className="neon-bg text-background font-display font-700 text-base py-4 rounded-xl uppercase tracking-wider hover:opacity-90 transition-all hover:scale-[1.02] flex items-center justify-center gap-2 disabled:opacity-60 disabled:scale-100"
                 >
-                  <Icon name="Send" size={18} />
-                  Отправить заявку
+                  <Icon name={loading ? "Loader" : "Send"} size={18} className={loading ? "animate-spin" : ""} />
+                  {loading ? "Отправка..." : "Отправить заявку"}
                 </button>
               </form>
             </>
