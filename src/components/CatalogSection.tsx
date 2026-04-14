@@ -155,15 +155,15 @@ export default function CatalogSection() {
                 </div>
               )}
 
-              {/* 3D button on hover */}
+              {/* Hover overlay */}
               <div
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                   hovered === product.id ? "opacity-100" : "opacity-0"
                 }`}
               >
                 <button className="glass border border-[var(--neon)]/40 text-[var(--neon)] font-body text-sm px-5 py-2.5 rounded-full flex items-center gap-2 hover:neon-bg hover:text-background transition-all">
-                  <Icon name="Box" size={16} />
-                  3D-примерка
+                  <Icon name="Eye" size={16} />
+                  Подробнее
                 </button>
               </div>
             </div>

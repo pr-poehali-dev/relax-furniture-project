@@ -64,7 +64,7 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
           >
             <span className="w-2 h-2 rounded-full neon-bg animate-pulse" />
             <span className="font-body text-sm text-muted-foreground">
-              3D-примерка в интерьере
+              Более 1200 моделей мебели
             </span>
           </div>
 
@@ -84,7 +84,7 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Примерьте любой предмет мебели в вашем интерьере ещё до покупки — с помощью нашей 3D-визуализации.
+            Создаём пространства, в которых хочется жить. Стильная мебель с доставкой и сборкой по всей России.
           </p>
 
           {/* CTA buttons */}
@@ -101,8 +101,8 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
               Смотреть каталог
             </button>
             <button className="glass border border-white/15 text-foreground font-display font-500 text-base px-8 py-4 rounded-sm uppercase tracking-wider hover:border-[var(--neon)] transition-all flex items-center gap-2">
-              <Icon name="Cube" fallback="Box" size={18} />
-              3D-примерка
+              <Icon name="Phone" size={18} />
+              Консультация
             </button>
           </div>
 
@@ -159,15 +159,10 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
               </div>
             </div>
 
-            {/* 3D badge */}
+            {/* Live badge */}
             <div className="absolute top-4 right-4 glass border border-[var(--neon)]/30 rounded-full px-3 py-1.5 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full neon-bg animate-pulse" />
-              <span className="font-body text-xs text-[var(--neon)] font-500">3D Live</span>
-            </div>
-
-            {/* Rotate hint */}
-            <div className="absolute top-4 left-4 glass border border-white/10 rounded-full p-2">
-              <Icon name="RotateCw" size={16} className="text-muted-foreground" />
+              <span className="font-body text-xs text-[var(--neon)] font-500">Интерьер</span>
             </div>
           </div>
 
