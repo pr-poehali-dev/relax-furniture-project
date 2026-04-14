@@ -125,11 +125,11 @@ export default function PromoSection() {
               Рассрочка <span className="neon-text">0%</span>
             </h3>
             <p className="font-body text-muted-foreground max-w-md">
-              Оформите любую мебель в рассрочку на 24 месяца без процентов и переплат
+              Оформите любую мебель в рассрочку на 3 месяца без процентов и переплат
             </p>
           </div>
           <div className="relative z-10 flex flex-col items-center gap-4">
-            <div className="font-display text-6xl font-700 neon-text">24</div>
+            <div className="font-display text-6xl font-700 neon-text">3</div>
             <div className="font-body text-sm text-muted-foreground uppercase tracking-wider">месяца / 0%</div>
             <button className="neon-bg text-background font-display font-600 text-sm px-8 py-4 rounded-sm uppercase tracking-wider hover:opacity-90 transition-all hover:scale-105">
               Оформить рассрочку
