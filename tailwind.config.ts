@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1776144403878578252.html"
 	],
 	prefix: "",
 	theme: {
@@ -86,9 +87,35 @@ export default {
 					}
 				}
 			},
+			fontFamily: {
+				display: ['Oswald', 'sans-serif'],
+				body: ['Golos Text', 'sans-serif'],
+			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fadeInUp 0.7s ease forwards',
+				'float': 'float 4s ease-in-out infinite',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite',
+				'marquee': 'marquee 20s linear infinite',
+			},
+			keyframes: {
+				fadeInUp: {
+					from: { opacity: '0', transform: 'translateY(40px)' },
+					to: { opacity: '1', transform: 'translateY(0)' },
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-12px)' },
+				},
+				'pulse-neon': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 140, 0, 0.4)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 140, 0, 0.8), 0 0 80px rgba(255, 140, 0, 0.3)' },
+				},
+				marquee: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' },
+				},
 			}
 		}
 	},
