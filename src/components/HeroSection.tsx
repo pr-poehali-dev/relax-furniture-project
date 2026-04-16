@@ -44,12 +44,33 @@ export default function HeroSection({ setActiveSection }: HeroProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      {/* Decorative lines */}
+      {/* Decorative elements */}
       <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent z-0" />
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div
           className="absolute w-px bg-gradient-to-b from-transparent via-[var(--neon)] to-transparent opacity-30"
           style={{ height: "40%", top: "30%", left: "33%" }}
+        />
+        {/* Warm ambient glow */}
+        <div
+          className="absolute rounded-full blur-3xl opacity-10"
+          style={{
+            width: "600px",
+            height: "600px",
+            background: "radial-gradient(circle, #d4793a 0%, #8b4a1e 50%, transparent 70%)",
+            top: "10%",
+            right: "-10%",
+          }}
+        />
+        <div
+          className="absolute rounded-full blur-3xl opacity-8"
+          style={{
+            width: "400px",
+            height: "400px",
+            background: "radial-gradient(circle, #a05a28 0%, transparent 70%)",
+            bottom: "5%",
+            left: "20%",
+          }}
         />
       </div>
 

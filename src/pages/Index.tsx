@@ -11,7 +11,7 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   return (
-    <div className="min-h-screen bg-background grain overflow-x-hidden">
+    <div className="min-h-screen bg-background grain overflow-x-hidden" style={{ backgroundColor: "hsl(24 18% 7%)", backgroundImage: "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212,121,58,0.09) 0%, transparent 60%)" }}>
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       <main>
         <section id="home"><HeroSection setActiveSection={setActiveSection} /></section>
