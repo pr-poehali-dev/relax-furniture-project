@@ -109,8 +109,8 @@ export default {
 					'50%': { transform: 'translateY(-12px)' },
 				},
 				'pulse-neon': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 140, 0, 0.4)' },
-					'50%': { boxShadow: '0 0 40px rgba(255, 140, 0, 0.8), 0 0 80px rgba(255, 140, 0, 0.3)' },
+					'0%, 100%': { boxShadow: '0 0 20px rgba(212, 121, 58, 0.4)' },
+					'50%': { boxShadow: '0 0 40px rgba(212, 121, 58, 0.8), 0 0 80px rgba(212, 121, 58, 0.3)' },
 				},
 				marquee: {
 					'0%': { transform: 'translateX(0)' },
